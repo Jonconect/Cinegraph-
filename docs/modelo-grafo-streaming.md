@@ -68,6 +68,7 @@ A estrutura pode ser visualizada no diagrama abaixo:
 
 ![Diagrama CineGraph](../assets/grafo-diagrama.png)
 
+<img width="3304" height="2719" alt="Image" src="https://github.com/user-attachments/assets/742d68da-51ff-4739-91ae-ebb26e350f91" />
 ---
 
 ## 🛠️ Considerações técnicas
