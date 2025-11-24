@@ -57,7 +57,7 @@ This script includes:
 2. Crie um banco de dados vazio.  
 3. Execute o script principal:
 
-```plaintext
+
 📊 Funcionalidades / Features
 • 	🔍 Consultas analíticas / Analytical queries
 • 	🎯 Recomendações inteligentes / Smart recommendations
