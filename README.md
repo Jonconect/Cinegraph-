@@ -69,18 +69,18 @@ cypher/populate_graph.cypher
 MATCH (u:User)-[:WATCHED]->(w1)<-[:DIRECTED]-(d:Director)-[:DIRECTED]->(w2:Movie)
 WHERE NOT (u)-[:WATCHED]->(w2)
 RETURN u.name AS usuario, w2.title AS recomendacao, d.name AS diretor;
-
+---
 // PT-BR: Gênero favorito por usuário
 // EN: Favorite genre per user
 MATCH (u:User)-[:WATCHED]->(w)-[:IN_GENRE]->(g:Genre)
 RETURN u.name AS usuario, g.name AS genero, COUNT(*) AS vezes
 ORDER BY usuario, vezes DESC;
-
+---
 📌 Licença / License
 Este projeto está licenciado sob a licença MIT.
 This project is licensed under the MIT License.
-
-👤 Autor / Author
-Jõnatas
+-----
+👤 Autor / Author:
+Jônatas Damasceno do Nascimento
 Fortaleza, Ceará – Brasil
 Projeto desenvolvido com foco em aprendizado de grafos, modelagem de dados e recomendação inteligente.
