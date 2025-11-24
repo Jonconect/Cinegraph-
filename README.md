@@ -21,9 +21,7 @@ CineGraph is a graph database project for a streaming service, built with Neo4j 
 
 O grafo abaixo representa os principais nós e relacionamentos do CineGraph, incluindo usuários, filmes, gêneros, diretores e atores.
 
-![CineGraph Diagram](assets/grafo-diagrama.png)
-
-> 📎 Este diagrama também está disponível na aba [Issues](https://github.com/Jonconect/Cinegraph-/issues/1)  
+> 📎 Este diagrama está disponível na aba [Issues](https://github.com/Jonconect/Cinegraph-/issues/1)  
 > 📄 Detalhes técnicos em [`docs/modelo-grafo-streaming.md`](docs/modelo-grafo-streaming.md)
 
 ---
