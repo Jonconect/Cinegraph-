@@ -42,6 +42,7 @@ EN
 2. 	Create an empty database.
 3. 	Run the main script:
 cypher/populate_graph.cypher
+--
 This script includes:
 • 	Graph reset
 • 	Constraints creation
@@ -57,7 +58,7 @@ This script includes:
 2. Crie um banco de dados vazio.  
 3. Execute o script principal:
 
-
+---
 📊 Funcionalidades / Features
 • 	🔍 Consultas analíticas / Analytical queries
 • 	🎯 Recomendações inteligentes / Smart recommendations
@@ -65,13 +66,15 @@ This script includes:
 • 	🧹 Reset do grafo / Graph rese
 cypher/populate_graph.cypher
 // PT-BR: Recomendar filmes não assistidos de diretores favoritos
-// EN: Recommend unwatched movies from favorite directors
+// EN: Recommend unwatched movies from favorite directors:
+
 MATCH (u:User)-[:WATCHED]->(w1)<-[:DIRECTED]-(d:Director)-[:DIRECTED]->(w2:Movie)
 WHERE NOT (u)-[:WATCHED]->(w2)
 RETURN u.name AS usuario, w2.title AS recomendacao, d.name AS diretor;
 ---
 // PT-BR: Gênero favorito por usuário
-// EN: Favorite genre per user
+// EN: Favorite genre per user:
+
 MATCH (u:User)-[:WATCHED]->(w)-[:IN_GENRE]->(g:Genre)
 RETURN u.name AS usuario, g.name AS genero, COUNT(*) AS vezes
 ORDER BY usuario, vezes DESC;
